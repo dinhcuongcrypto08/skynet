@@ -1,202 +1,305 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta charset="UTF-8"/>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
   <title>Skynet Finance</title>
 
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
 </head>
+
 <body>
 
-<header class="header">
-  <div class="logo">SKYNET FINANCE</div>
+<div class="bg-overlay"></div>
 
-  <nav>
+<header class="header">
+
+  <div class="logo">
+    SKYNET FINANCE
+  </div>
+
+  <nav class="nav">
+
     <a href="#about">About</a>
-    <a href="#farming">Yield Farming</a>
-    <a href="#tokenomics">Tokenomics</a>
+    <a href="#features">Features</a>
+    <a href="#farms">Farms</a>
     <a href="#roadmap">Roadmap</a>
-    <a href="#faq">FAQ</a>
+
   </nav>
 
-  <button class="connect-btn">Connect Wallet</button>
+  <button
+    id="connectWallet"
+    class="wallet-btn"
+  >
+    Connect Wallet
+  </button>
+
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h1>Next Generation Yield Farming Protocol</h1>
+
+  <div class="hero-left">
+
+    <span class="badge">
+      HIGH APY YIELD FARMING
+    </span>
+
+    <h1>
+      The Future of
+      Decentralized Farming
+    </h1>
 
     <p>
-      High APY decentralized farming ecosystem
-      powered by autonomous liquidity strategies
-      and multi-chain rewards.
+      Skynet Finance is an advanced
+      multi-chain yield farming protocol
+      delivering sustainable high APY
+      strategies powered by AI liquidity
+      optimization.
     </p>
 
     <div class="hero-buttons">
-      <button>Launch App</button>
-      <button class="secondary">Read Docs</button>
+
+      <button class="primary-btn">
+        Launch App
+      </button>
+
+      <button class="secondary-btn">
+        Read Docs
+      </button>
+
     </div>
 
     <div class="stats">
-      <div class="card">
+
+      <div class="stat-card">
         <h2>$245M+</h2>
         <p>Total Value Locked</p>
       </div>
 
-      <div class="card">
+      <div class="stat-card">
         <h2>420%</h2>
-        <p>Max APY</p>
+        <p>Maximum APY</p>
       </div>
 
-      <div class="card">
+      <div class="stat-card">
         <h2>150K+</h2>
-        <p>Active Farmers</p>
+        <p>Active Users</p>
       </div>
+
     </div>
+
   </div>
+
+  <div class="hero-right">
+
+    <div class="dashboard-card">
+
+      <h3>Live Farming Pools</h3>
+
+      <div class="pool">
+
+        <div>
+          <strong>SKY / ETH</strong>
+          <p>Liquidity Pool</p>
+        </div>
+
+        <span>320% APY</span>
+
+      </div>
+
+      <div class="pool">
+
+        <div>
+          <strong>SKY / USDC</strong>
+          <p>Stable Farming</p>
+        </div>
+
+        <span>280% APY</span>
+
+      </div>
+
+      <div class="pool">
+
+        <div>
+          <strong>OPN / SKY</strong>
+          <p>Boosted Rewards</p>
+        </div>
+
+        <span>420% APY</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
-<section id="about" class="section">
+<section
+  id="about"
+  class="section"
+>
+
   <h2>Why Skynet Finance?</h2>
 
-  <div class="grid">
-    <div class="feature">
-      <h3>High Yield Strategies</h3>
+  <div class="features-grid">
+
+    <div class="feature-card">
+
+      <h3>AI Yield Engine</h3>
+
       <p>
-        Automated farming strategies optimized
-        for sustainable high APY rewards.
+        Intelligent liquidity routing
+        across high-performing DeFi
+        strategies.
       </p>
+
     </div>
 
-    <div class="feature">
-      <h3>Multi-chain Farming</h3>
+    <div class="feature-card">
+
+      <h3>Multi-chain Protocol</h3>
+
       <p>
-        Farm across Ethereum, Base, Arbitrum,
-        and OPN ecosystem.
+        Operates across Ethereum,
+        Arbitrum, Base and OPN.
       </p>
+
     </div>
 
-    <div class="feature">
-      <h3>AI Liquidity Engine</h3>
+    <div class="feature-card">
+
+      <h3>DAO Governance</h3>
+
       <p>
-        Intelligent liquidity allocation system
-        powered by real-time analytics.
+        Community-driven treasury
+        and protocol decisions.
       </p>
+
     </div>
+
   </div>
+
 </section>
 
-<section id="farming" class="section dark">
-  <h2>Yield Farming Pools</h2>
+<section
+  id="farms"
+  class="section"
+>
 
-  <div class="pools">
+  <h2>Top Farming Pools</h2>
 
-    <div class="pool-card">
+  <div class="farm-grid">
+
+    <div class="farm-card">
+
       <h3>SKY / ETH</h3>
+
       <p>APY: 320%</p>
-      <button>Farm Now</button>
+
+      <button>
+        Start Farming
+      </button>
+
     </div>
 
-    <div class="pool-card">
+    <div class="farm-card">
+
       <h3>SKY / USDC</h3>
+
       <p>APY: 280%</p>
-      <button>Farm Now</button>
+
+      <button>
+        Start Farming
+      </button>
+
     </div>
 
-    <div class="pool-card">
+    <div class="farm-card">
+
       <h3>OPN / SKY</h3>
+
       <p>APY: 420%</p>
-      <button>Farm Now</button>
+
+      <button>
+        Start Farming
+      </button>
+
     </div>
 
   </div>
+
 </section>
 
-<section id="tokenomics" class="section">
-  <h2>Tokenomics</h2>
+<section
+  id="roadmap"
+  class="section"
+>
 
-  <div class="tokenomics">
-
-    <div class="token-card">
-      <h3>Total Supply</h3>
-      <p>1,000,000,000 SKY</p>
-    </div>
-
-    <div class="token-card">
-      <h3>Farming Rewards</h3>
-      <p>40%</p>
-    </div>
-
-    <div class="token-card">
-      <h3>Treasury</h3>
-      <p>20%</p>
-    </div>
-
-    <div class="token-card">
-      <h3>Liquidity</h3>
-      <p>15%</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="roadmap" class="section dark">
   <h2>Roadmap</h2>
 
-  <div class="timeline">
+  <div class="roadmap">
 
-    <div class="timeline-item">
+    <div class="roadmap-item">
+
       <h3>Q1 2026</h3>
-      <p>Protocol Architecture & Testnet Launch</p>
+
+      <p>
+        Smart Contracts,
+        Testnet Launch,
+        Security Audit
+      </p>
+
     </div>
 
-    <div class="timeline-item">
+    <div class="roadmap-item">
+
       <h3>Q2 2026</h3>
-      <p>Mainnet Farming Pools Deployment</p>
+
+      <p>
+        Mainnet Farming,
+        DAO Governance,
+        Staking Pools
+      </p>
+
     </div>
 
-    <div class="timeline-item">
+    <div class="roadmap-item">
+
       <h3>Q3 2026</h3>
-      <p>AI Yield Optimizer & Governance</p>
+
+      <p>
+        AI Yield Optimizer,
+        Cross-chain Farming
+      </p>
+
     </div>
 
-    <div class="timeline-item">
-      <h3>Q4 2026</h3>
-      <p>Cross-chain Expansion & DAO Treasury</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="faq" class="section">
-  <h2>FAQ</h2>
-
-  <div class="faq-item">
-    <h3>What is Skynet Finance?</h3>
-    <p>
-      Skynet Finance is a decentralized
-      yield farming protocol focused on
-      sustainable high APY opportunities.
-    </p>
-  </div>
-
-  <div class="faq-item">
-    <h3>How does farming work?</h3>
-    <p>
-      Users stake LP tokens to earn SKY rewards
-      through automated farming strategies.
-    </p>
   </div>
 
 </section>
 
 <footer class="footer">
-  <p>© 2026 Skynet Finance. All rights reserved.</p>
+
+  <p>
+    © 2026 Skynet Finance
+  </p>
+
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.1/dist/ethers.umd.min.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-```
